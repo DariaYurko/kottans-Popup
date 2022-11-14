@@ -154,10 +154,10 @@ body {
 
 .modal-window__items {
    display: flex;
-   justify-content: space-between;
    flex-wrap: wrap;
    justify-content: center;
    row-gap:50px;
+   column-gap: 10px;
    margin: 50px 0;
 }
 
@@ -178,6 +178,7 @@ body {
    height:70px;
    overflow: hidden;
 }
+
 
 .item__img {
    width: 100%;
@@ -220,12 +221,13 @@ body {
 .item:hover,
 .more-label:hover
  {
-   border: 1px solid rgb(148, 144, 144);
+   /* border: 1px solid rgb(148, 144, 144); */
+   outline: 1px solid rgb(148, 144, 144);
 }
 
 .more-input:focus + .more-label,
 .popup-button__input:focus + .popup-button__lable {
-   outline: 1px solid rgb(103, 103, 208);
+   outline: 2px solid rgb(103, 103, 208);
 }
 
 .modal-window__link {
